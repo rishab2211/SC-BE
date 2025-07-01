@@ -9,7 +9,7 @@ app.use(express.text());
 // Allow CORS for frontend running at localhost:5173
 app.use(cors({
   origin: "https://sc-be-jrui.vercel.app",
-  methods: ["GET", "PUT"],
+  methods: ["GET", "PUT","POST","DELETE"],
   allowedHeaders: ["Content-Type", "If-None-Match", "If-Modified-Since"],
   exposedHeaders: ["ETag", "Last-Modified"]  
 }));
