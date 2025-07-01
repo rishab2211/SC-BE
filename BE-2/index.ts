@@ -6,12 +6,13 @@ const PORT = 3000;
 // Middleware to parse text body
 app.use(express.text());
 
+
 // Allow CORS for frontend running at localhost:5173
 app.use(cors({
-  origin: "https://sc-be-jrui.vercel.app",
-  methods: ["GET", "PUT","POST","DELETE"],
+  origin: "https://sc-be.vercel.app/*",
+  methods: ["GET", "PUT", "POST", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "If-None-Match", "If-Modified-Since"],
-  exposedHeaders: ["ETag", "Last-Modified"]  
+  exposedHeaders: ["ETag", "Last-Modified"]
 }));
 
 
