@@ -8,7 +8,7 @@ function App() {
   const [lastModified, setLastModified] = useState("");
   const [status, setStatus] = useState("");
 
-  const API_URL = `http://localhost:3000/resource/${resourceName}`;
+  const API_URL = `http://sc-be.vercel.app/resource/${resourceName}`;
 
   const fetchData = async () => {
     const headers:any = {};
