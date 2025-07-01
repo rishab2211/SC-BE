@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/resource/:path*",
+      "destination": "https://sc-be.vercel.app/resource/:path*"
+    }
+  ]
+}
